@@ -7,7 +7,7 @@ paths:
     get:
       summary: XSS testing
       description: |
-     <img src="invalid-image" onerror="alert(String.fromCharCode(88, 83, 83))">
+     <img src="data:image/svg+xml;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4=">
 
       responses:
         '200':
