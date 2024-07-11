@@ -7,7 +7,7 @@ paths:
     get:
       summary: XSS testing
       description: |
-        <img src=x onerror="alert('XSS')">
+        <script>alert('XSS')</script>
       responses:
         '200':
           description: Successful response
