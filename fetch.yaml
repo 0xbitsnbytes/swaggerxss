@@ -6,7 +6,8 @@ paths:
     get:
       summary: XSS testing
       description: |
-  <img src="invalid-image" onerror="alert('XSS')" onmouseover="alert('XSS')">
+%253Cimg%2520src%253D%2522invalid-image%2522%2520onerror%253D%2522alert('XSS')%2522%253E
+
 
       responses:
         '200':
