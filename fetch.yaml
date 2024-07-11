@@ -1,13 +1,14 @@
 swagger: '2.0'
 info:
-  title: XSS Test API
+  title: XSS Test 
   version: 1.0.0
 paths:
   /:
     get:
       summary: XSS testing
       description: |
-        <img src="invalid-image" onerror="alert('XSS')">
+     <img src="invalid-image" onerror="alert(String.fromCharCode(88, 83, 83))">
+
       responses:
         '200':
           description: Successful response
